@@ -1,0 +1,18 @@
+- --------------------------------------------------
+- 2024-07-24 18:46:45.037696 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (14260, 8, 3), X_val shape: (3056, 8, 3), X_test shape: (3056, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- --------------------------------------------------
+- 2024-07-24 18:48:57.445451 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (14260, 8, 3), X_val shape: (3056, 8, 3), X_test shape: (3056, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.001560083047176401
+- MAPE: inf
+- RMSE: 0.03748631104826927
+- MAE: 0.026908036321401596
+- R2: 0.5350119026149963
