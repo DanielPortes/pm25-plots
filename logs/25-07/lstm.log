@@ -1,0 +1,182 @@
+- --------------------------------------------------
+- 2024-07-25 16:14:56.310492 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 16:15:36.177106 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 16:18:23.097581 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 16:19:08.852437 - Iniciando o processo de treinamento do modelo LSTM
+- --------------------------------------------------
+- 2024-07-25 16:19:28.409210 - Iniciando o processo de treinamento do modelo LSTM
+- --------------------------------------------------
+- 2024-07-25 16:20:20.683972 - Iniciando o processo de treinamento do modelo LSTM
+- --------------------------------------------------
+- 2024-07-25 16:22:16.024623 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 16:22:41.484915 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 16:22:56.267593 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (18423, 8, 3), X_val shape: (3948, 8, 3), X_test shape: (3948, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0017084132026260097
+- MAPE: inf
+- RMSE: 0.039030469954013824
+- MAE: 0.025948738679289818
+- R2: 0.47036091886313486
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 17:24:56.673912 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 17:28:20.427666 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (18423, 8, 3), X_val shape: (3948, 8, 3), X_test shape: (3948, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- MAPE: inf
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- MAPE: inf
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- MAPE: 1196595600.0
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018631075508892536
+- RMSE: 0.04085911437869072
+- MAE: 0.027005242183804512
+- R2: 0.44142507353498767
+- --------------------------------------------------
+- 2024-07-25 17:48:50.861595 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 18:03:48.507338 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 18:04:42.197137 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (18423, 8, 3), X_val shape: (3948, 8, 3), X_test shape: (3948, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.1517050549420875), ('drop_prob_recurrent', 0.4756119532966647), ('hidden_layer_size', 444), ('lr', 0.00015379379813713667), ('num_epochs', 400), ('num_layers', 4), ('weight_decay', 1.5088480620326371e-05)])
+- Melhor Score: 0.0018617030776416261
+- RMSE: 0.04165796935558319
+- MAE: 0.026033509522676468
+- R2: 0.442745979326011
+- --------------------------------------------------
+- 2024-07-25 18:19:11.675437 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 18:22:47.805798 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 18:24:33.109931 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (18423, 8, 3), X_val shape: (3948, 8, 3), X_test shape: (3948, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- --------------------------------------------------
+- 2024-07-25 18:28:19.837727 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 18:30:33.505243 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (18423, 8, 3), X_val shape: (3948, 8, 3), X_test shape: (3948, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- --------------------------------------------------
+- 2024-07-25 19:21:30.974925 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 19:22:31.736254 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- --------------------------------------------------
+- 2024-07-25 19:25:05.242510 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (18423, 8, 3), X_val shape: (3948, 8, 3), X_test shape: (3948, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- --------------------------------------------------
+- 2024-07-25 19:26:15.772249 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (18423, 8, 3), X_val shape: (3948, 8, 3), X_test shape: (3948, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- --------------------------------------------------
+- 2024-07-25 19:38:59.317662 - Iniciando o processo de treinamento do modelo LSTM
+- Colunas Selecionadas: ['PM2.5', 'PM10', 'Monóxido de Carbono']
+- X_train shape: (18423, 8, 3), X_val shape: (3948, 8, 3), X_test shape: (3948, 8, 3)
+- Espaco de Busca: 
+{'hidden_layer_size': Integer(low=8, high=512, prior='uniform', transform='identity'), 'lr': Real(low=0.0001, high=0.1, prior='log-uniform', transform='identity'), 'num_layers': Integer(low=1, high=10, prior='uniform', transform='identity'), 'batch_size': Categorical(categories=(64, 96, 128), prior=None), 'num_epochs': Categorical(categories=(400,), prior=None), 'activation_function': Categorical(categories=('relu', 'sigmoid', 'tanh'), prior=None), 'drop_prob_input': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'drop_prob_recurrent': Real(low=0.0, high=0.5, prior='uniform', transform='identity'), 'weight_decay': Real(low=1e-08, high=0.001, prior='log-uniform', transform='identity')}
+- Melhores Parâmetros: OrderedDict([('activation_function', 'tanh'), ('batch_size', 128), ('drop_prob_input', 0.0), ('drop_prob_recurrent', 0.0), ('hidden_layer_size', 512), ('lr', 0.0001), ('num_epochs', 400), ('num_layers', 9), ('weight_decay', 1e-08)])
+- Melhor Score: 0.08041773488124211
+- RMSE: 0.07841596752405167
+- MAE: 0.04932766035199165
+- R2: 0.48496409908053423
